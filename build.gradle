@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'edu.pucmm'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:6.7.0'
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+    implementation 'com.h2database:h2:2.2.224'
+    implementation 'org.postgresql:postgresql:42.7.2'
+    implementation 'org.jasypt:jasypt:1.9.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+}
+
+application {
+    mainClass = 'edu.pucmm.icc352.Main'
+}
